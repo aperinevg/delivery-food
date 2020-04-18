@@ -88,20 +88,20 @@
               <img src="img/42.jpg" alt="" class="card-image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title card-title-reg">Калифорния лосось стандарт</h3>
+                  <h3 class="card-title card-title-reg" id="ingredients" >Калифорния лосось стандарт</h3>
                   
                 </div>
                 <!-- /.card-heading -->
                 <div class="card-info">
-                  <div class="ingredients">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
+                  <div class="ingredients" >Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</div>
                 </div>
                 <!-- /.card-info -->
                 <div class="card-buttons">
-                  <button class="button button-primary">
-                    <span class="button-card-text">В корзину</span>
+                  <button class="button button-primary" id="button-card" onclick="addButtonCard()">
+                    <span class="button-card-text" id="button-card-text">В корзину</span>
                     <img src="img/shopping-cart2.svg" alt="shopping-card" class="button-card-image">
                   </button>
-                  <strong class="card-price-bold">395 ₽</strong>
+                  <strong class="card-price-bold" id="card-price-bold">395 ₽</strong>
                 </div>
               
               </div>
@@ -113,7 +113,7 @@
               <img src="img/43.jpg" alt="" class="card-image" />
               <div class="card-text">
                 <div class="card-heading">
-                  <h3 class="card-title card-title-reg">Окинава стандарт</h3>
+                  <h3 class="card-title card-title-reg" id="ingredients">Окинава стандарт</h3>
                   
                 </div>
                 <!-- /.card-heading -->
@@ -122,11 +122,11 @@
                 </div>
                 <!-- /.card-info -->
                 <div class="card-buttons">
-                  <button class="button button-primary">
-                    <span class="button-card-text">В корзину</span>
+                  <button class="button button-primary" id="button-card" onclick="addButtonCard()">
+                    <span class="button-card-text" id="button-card-text" >В корзину</span>
                     <img src="img/shopping-cart2.svg" alt="shopping-card" class="button-card-image">
                   </button>
-                  <strong class="card-price-bold">350 ₽</strong>
+                  <strong class="card-price-bold" id="card-price-bold">350 ₽</strong>
                 </div>
               
               </div>
@@ -237,56 +237,8 @@
         <button class="close" >&times;</button>
       </div>
       <!-- /.modal-header -->
-      <div class="modal-body">
-        <div class="food-row">
-          <span class="food-name">Ролл угорь стандарт</span>
-          <strong class="food-price">250 ₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
-        <!-- /.food-row -->
-        <div class="food-row">
-          <span class="food-name">Ролл угорь стандарт</span>
-          <strong class="food-price">250 ₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
-        <!-- /.food-row -->
-        <div class="food-row">
-          <span class="food-name">Ролл угорь стандарт</span>
-          <strong class="food-price">250 ₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
-        <!-- /.food-row -->
-        <div class="food-row">
-          <span class="food-name">Ролл угорь стандарт</span>
-          <strong class="food-price">250 ₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
-        <!-- /.food-row -->
-        <div class="food-row">
-          <span class="food-name">Ролл угорь стандарт</span>
-          <strong class="food-price">250 ₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
+      <div class="modal-body" id="modal-body">
+       
         <!-- /.food-row -->
       </div>
       <!-- /.modal-body -->
