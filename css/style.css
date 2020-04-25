@@ -299,6 +299,9 @@ body {
 }
 .modal-body {
   margin-bottom: 52px;
+  overflow: auto;
+  height: 300px;
+  overflow-x: hidden; 
 }
 .food-row {
   display: flex;
@@ -307,6 +310,7 @@ body {
   padding-bottom: 8px;
   border-bottom: 1px solid #d9d9d9;
   margin-bottom: 15px;
+ 
 }
 .food-price {
   margin-left: auto;
@@ -323,6 +327,20 @@ body {
 .food-counter {
   display: flex;
   align-items: center;
+}
+.food_row_delete {
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #716767;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+}
+.food_row_delete:hover {
+  opacity: 1;
+  border: none;
 }
 .counter-button {
   display: flex;
@@ -359,7 +377,7 @@ body {
   border-radius: 5px;
   color: #fff;
   padding: 10px 20px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
@@ -424,7 +442,7 @@ body {
   .food-name {
     text-overflow: ellipsis;
     overflow: hidden;
-    
+
     font-size: 14px;
     line-height: 26px;
   }
@@ -442,22 +460,21 @@ body {
   }
   .counter {
     font-size: 14px;
-  line-height: 16px;
-  margin-left: 5px;
-  margin-right: 5px;
+    line-height: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .modal-title {
     font-size: 18px;
-  line-height: 24px;
+    line-height: 24px;
   }
-  .close{
+  .close {
     font-size: 24px;
   }
   .modal-body {
     margin-bottom: 15px;
   }
 
-  
   .card-info {
     flex-wrap: wrap;
   }
